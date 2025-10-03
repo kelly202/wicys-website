@@ -1,0 +1,2 @@
+# wicys-website
+WiCyS @ RIT
