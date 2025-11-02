@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        {% if page.title %}{{ page.title }} - {% endif %}WiCyS @ RIT
+    </title>
+
+    <!-- Keep the same fonts but load directly from Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+    <!-- Site navigational link -->
+    <nav>
+	<a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about-us/' | relative_url }}">About Us</a>
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/schedule/' | relative_url }}">Schedule</a>
+        <a href="{{ '/sponsor-us/' | relative_url }}">Sponsor Us</a>
+    </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <!-- add social medialink to bottom of each page -->
+        <p>&copy; 2024 {{ site.title }}. All rights reserves.<p>
+    </footer>
+</body>
+</html>
+
